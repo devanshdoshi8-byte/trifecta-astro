@@ -214,6 +214,17 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
               <span>Sandbox</span>
             </button>
 
+            <a
+              href="https://github.com/devanshdoshi8-byte/trifecta-astro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-mono font-medium text-space-300 bg-space-900 hover:bg-space-800 hover:text-white border border-space-700 rounded transition-colors cursor-pointer"
+              title="View source code on GitHub"
+            >
+              <GitBranch className="w-3.5 h-3.5 text-sky-400" />
+              <span>GitHub</span>
+            </a>
+
             {/* Dark / Light Toggle */}
             <button
               onClick={toggleTheme}

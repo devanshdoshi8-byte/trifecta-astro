@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Orbit, Sparkles, Compass, Radio, ExternalLink } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -63,11 +63,21 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Epilogue Transition back to Space */}
         <div className="pt-8 border-t border-space-900 flex flex-wrap items-center justify-between gap-4 text-[11px] text-space-500">
-          <div>
-            &copy; 2026 Trifecta Astrophysics Research Initiative. All synthetic data labeled for evaluation.
+          <div className="flex flex-wrap items-center gap-3">
+            <span>&copy; 2026 Trifecta Astrophysics Research Initiative.</span>
+            <span>&middot;</span>
+            <a
+              href="https://github.com/devanshdoshi8-byte/trifecta-astro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-300 text-space-400 transition-colors flex items-center gap-1"
+            >
+              <span>GitHub Repository</span>
+              <ExternalLink className="w-3 h-3 text-sky-400" />
+            </a>
           </div>
           <div className="flex items-center gap-2 text-space-400">
-            <span>Entering Quiet Astronomical Environment</span>
+            <span>Astronomical Data: NASA Exoplanet Archive &amp; ESA Gaia DR3</span>
             <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
           </div>
         </div>
