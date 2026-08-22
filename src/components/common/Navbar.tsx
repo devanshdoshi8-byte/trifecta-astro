@@ -15,7 +15,8 @@ import {
   Award,
   Radio,
   Compass,
-  Upload
+  Upload,
+  GitBranch
 } from 'lucide-react';
 
 interface NavbarProps {
